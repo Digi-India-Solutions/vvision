@@ -9,7 +9,7 @@ const ProductDetails = () => {
 
   const getApiData = async () => {
     try {
-      let res = await axios.get("http://localhost:8000/api/product/" + _id);
+      let res = await axios.get("https://api.vvisionwiredrawing.com/api/product/" + _id);
       setData(res.data.data);
     } catch (error) {
       console.log(error);

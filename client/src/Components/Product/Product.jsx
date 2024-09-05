@@ -11,7 +11,7 @@ const Product = () => {
 
   const getApidata = async () => {
     try {
-      const res = await axios.get("http://localhost:8000/api/product");
+      const res = await axios.get("https://api.vvisionwiredrawing.com/api/product");
       if (res.status === 200) {
         setData(res.data.data.reverse());
       }

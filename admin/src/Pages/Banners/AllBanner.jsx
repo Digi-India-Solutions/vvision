@@ -9,7 +9,7 @@ const AllBanner = () => {
     const [data, setData] = useState([])
     const getApiData = async () => {
         try {
-            const res = await axios.get("http://localhost:8000/api/banner")
+            const res = await axios.get("https://api.vvisionwiredrawing.com/api/banner")
             if (res.status === 200) {
                 setData(res.data.data.reverse())
             }
@@ -19,7 +19,7 @@ const AllBanner = () => {
     }
     const deleteImage = async(_id)=>{
         try {
-            const res = await axios.delete("http://localhost:8000/api/banner/"+_id)
+            const res = await axios.delete("https://api.vvisionwiredrawing.com/api/banner/"+_id)
             if(res.status===200){
                 toast.success("Banner Deleted Successfully")
                 getApiData()

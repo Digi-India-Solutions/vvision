@@ -25,7 +25,7 @@ const AddBanner = () => {
         formData.append('image', image);
         try {
             setIsLoading(true);
-            const response = await axios.post('http://localhost:8000/api/banner', formData, {
+            const response = await axios.post('https://api.vvisionwiredrawing.com/api/banner', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }

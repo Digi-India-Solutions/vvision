@@ -10,7 +10,7 @@ const AllCategory = () => {
     const [data, setData] = useState([])
     const getApiData = async () => {
         try {
-            let res = await axios.get("http://localhost:8000/api/category")
+            let res = await axios.get("https://api.vvisionwiredrawing.com/api/category")
             console.log(res)
             setData(res.data.data.reverse())
         } catch (error) {
@@ -19,7 +19,7 @@ const AllCategory = () => {
     }
     const deleteRecord = async (_id) => {
         try {
-            let res = await axios.delete("http://localhost:8000/api/category/" + _id)
+            let res = await axios.delete("https://api.vvisionwiredrawing.com/api/category/" + _id)
             if (res.status === 200) {
                 toast.success("Category Deletd Succssfully")
             }

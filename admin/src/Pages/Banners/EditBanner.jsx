@@ -12,7 +12,7 @@ const EditBanner = () => {
 
     const getApiData = async () => {
         try {
-            const res = await axios.get("http://localhost:8000/api/banner/" + _id)
+            const res = await axios.get("https://api.vvisionwiredrawing.com/api/banner/" + _id)
             console.log(res)
             if (res.status === 200) {
                 setImage(res.data.data)
@@ -42,7 +42,7 @@ const EditBanner = () => {
         formData.append('image', image);
         try {
             setIsLoading(true);
-            const response = await axios.put('http://localhost:8000/api/banner/' + _id, formData, {
+            const response = await axios.put('https://api.vvisionwiredrawing.com/api/banner/' + _id, formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }

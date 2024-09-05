@@ -24,7 +24,7 @@ const Contact = () => {
   const postdata = async (e) => {
     e.preventDefault()
     try {
-      let res = await axios.post("http://localhost:8000/api/contact", data)
+      let res = await axios.post("https://api.vvisionwiredrawing.com/api/contact", data)
       if(res.status===200){
         toast.success("Thank you! Your message has been sent successfully. We will get back to you shortly.");
         navigate('/thank-you'); 

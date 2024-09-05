@@ -24,7 +24,7 @@ const EditProduct = () => {
 
     const getApiData = async () => {
         try {
-            let res = await axios.get("http://localhost:8000/api/category");
+            let res = await axios.get("https://api.vvisionwiredrawing.com/api/category");
             setCatedata(res.data.data);
         } catch (error) {
             console.log(error);
@@ -33,7 +33,7 @@ const EditProduct = () => {
 
     const getProductData = async () => {
         try {
-            let res = await axios.get("http://localhost:8000/api/product/" + _id);
+            let res = await axios.get("https://api.vvisionwiredrawing.com/api/product/" + _id);
             setData(res.data.data);
             console.log(data)
         } catch (error) {
@@ -68,7 +68,7 @@ const EditProduct = () => {
             formData.append("image2", data.image2);
             formData.append("image3", data.image3);
             formData.append("image4", data.image4);
-            const res = await axios.put(`http://localhost:8000/api/product/${_id}`, formData);
+            const res = await axios.put(`https://api.vvisionwiredrawing.com/api/product/${_id}`, formData);
             if (res.status === 200) {
                 toast.success("Product updated successfully");
                 navigate("/all-products");

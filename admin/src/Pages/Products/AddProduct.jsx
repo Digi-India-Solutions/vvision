@@ -13,7 +13,7 @@ const AddProduct = () => {
 
     const getApiData = async () => {
         try {
-            let res = await axios.get("http://localhost:8000/api/category");
+            let res = await axios.get("https://api.vvisionwiredrawing.com/api/category");
             console.log(res);
             setCatedata(res.data.data);
         } catch (error) {
@@ -60,7 +60,7 @@ const AddProduct = () => {
             formData.append("image2", data.image2);
             formData.append("image3", data.image3);
             formData.append("image4", data.image4);
-            const res = await axios.post("http://localhost:8000/api/product", formData);
+            const res = await axios.post("https://api.vvisionwiredrawing.com/api/product", formData);
             console.log(res);
             if (res.status === 200) {
                 toast.success("New Product created");

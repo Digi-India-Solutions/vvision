@@ -23,7 +23,7 @@ const EditCategory = () => {
     }
     const getApiData = async () => {
         try {
-            let res = await axios.get("http://localhost:8000/api/category/" + _id)
+            let res = await axios.get("https://api.vvisionwiredrawing.com/api/category/" + _id)
             console.log(res);
             setData(res.data.data)
         } catch (error) {
@@ -38,7 +38,7 @@ const EditCategory = () => {
         formData.append("image", data.image)
         setBtnLoading(true)
         try {
-            let res = await axios.put("http://localhost:8000/api/category/" + _id, formData)
+            let res = await axios.put("https://api.vvisionwiredrawing.com/api/category/" + _id, formData)
             if (res.status === 200) {
                 toast.success("Category Updated Successfully")
                 navigate("/all-category")

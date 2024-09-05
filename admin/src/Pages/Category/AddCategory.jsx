@@ -26,7 +26,7 @@ const AddCategory = () => {
         formData.append("image", data.image)
         setIsloding(true)
         try {
-            let res = await axios.post("http://localhost:8000/api/category", formData)
+            let res = await axios.post("https://api.vvisionwiredrawing.com/api/category", formData)
             console.log(res)
             if (res.status === 200) {
                 toast.success("Product Category is created")

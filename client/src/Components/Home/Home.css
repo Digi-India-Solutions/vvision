@@ -1,0 +1,300 @@
+.conent {
+    background-color: #F2EDEB;
+    padding: 50px 20px;
+}
+
+.contentmain {
+    display: flex;
+    gap: 30px;
+    padding: 30px 50px;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.contentmain div {
+    height: 200px;
+    width: 25%;
+    background-color: #F2EDEB;
+    border: 1px solid rgba(0, 0, 0, 0.276);
+    padding: 40px 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.contentmain div:hover {
+    height: 200px;
+    width: 25%;
+    background-color: #2A739C;
+    border: 1px solid rgba(0, 0, 0, 0.276);
+    padding: 40px 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: white;
+    /* transition: all 2.s; */
+}
+
+.contentmain div p {
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.contentmain div img {
+    height: 90px;
+}
+
+
+/* home about */
+
+.homeabout {
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+}
+
+.abouthomesmallheading {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 700;
+    opacity: 0.9;
+}
+
+.abouthomeheading {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.homeabouttext {
+    padding: 50px 0px;
+}
+
+.abouthometext {
+    font-size: 17px;
+    font-weight: 600;
+    opacity: 0.9;
+    text-align: justify;
+}
+
+.abouthomeicon {
+    display: flex;
+    gap: 70px;
+    margin-top: 50px;
+}
+
+.homeaboutimage img {
+    height: 600px;
+}
+
+.abouthomeiconsmall {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.homeabouticon img {
+    padding: 10px;
+    height: 75px;
+    background-color: #F2EDEB;
+    border-radius: 3px;
+}
+
+.homeabouticon img:hover {
+    padding: 10px;
+    height: 75px;
+    background-color: #2A739C;
+    border-radius: 3px;
+}
+
+.abouthomeiconsmall p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.homeaboutbutton button {
+    background-color: #2A739C;
+    border: 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 30px;
+    width: 200px;
+}
+
+.homeaboutbutton button a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+/*  */
+.sectionincrement {
+    background-image: url(../../Images/product/bagground.jpg);
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.incrementor {
+    padding: 60px 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40PX;
+}
+.incrementdiv{
+    width: 25%;
+    padding: 10PX;
+    color: white;
+    background-color: #2A739C;
+    border-radius: 5PX;
+}
+.counting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    opacity: 0.9;
+    font-weight: 900;
+}
+.countingtext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+
+
+
+
+
+/* media query content */
+@media(max-width:768px) {
+    .w-100 {
+        height: 150px !important;
+    }
+}
+
+@media(max-width:768px) {
+    .conent {
+        padding: 10px;
+    }
+
+    .contentmain {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 3px;
+    }
+
+    .contentmain div {
+        height: 100px;
+        width: 48%;
+        background-color: #F2EDEB;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contentmain div img {
+        height: 50px;
+    }
+
+    .contentmain div:hover {
+        height: 150px;
+        width: 100%;
+        background-color: #2A739C;
+        padding: 10px;
+    }
+
+    .contentmain div p {
+        font-size: 14px;
+    }
+}
+
+/* media query  */
+@media(max-width:768px) {
+    .homeabout {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .homeaboutimage img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .abouthomeicon {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 30px;
+        margin-top: 50px;
+    }
+
+    .abouthomeheading {
+        font-size: 16px;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    .abouthomesmallheading {
+        font-size: 13px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .abouthometext {
+        font-size: 12px;
+    }
+
+    .abouthomeiconsmall {
+        display: flex;
+        gap: 0px;
+        flex-direction: column;
+    }
+
+    .homeaboutbutton button {
+        width: 100%;
+    }
+}
+
+/*  */
+@media(max-width:768px){
+    .incrementor {
+        padding: 60px 10px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 10PX;
+    }
+    .incrementdiv{
+        width: 48%;
+        padding: 10PX;
+        color: white;
+        background-color: #2A739C;
+        border-radius: 5PX;
+    }
+    .counting{
+        font-size: 30px;
+    }
+    .countingtext{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        opacity: 0.9;
+        font-weight: 500;
+    }
+}

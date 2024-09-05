@@ -1,0 +1,115 @@
+.footermain {
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.858);
+}
+
+.footerfirstdiv {
+    width: 29%;
+}
+.footerfirstdiv p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footerseconddiv {
+    width: 24%;
+}
+.footerseconddiv p{
+    color: orange;
+    margin-left: 70px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.footerthirddiv {
+    width: 24%;
+}
+.footerthirddiv p{
+    color: orange;
+    margin-left: 0px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.footerthirddiv div{
+    color: white;
+    margin-left: 0px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.footerthirddiv div span a{
+    color: white;
+    text-decoration: none;
+}
+.footerthirddiv div span{
+  margin-left: 10px;
+}
+.footerfourdiv {
+    width: 20%;
+}
+.footerfourdiv p{
+    color: orange;
+    margin-left: 40px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.footerfourdiv div i{
+   color: orange;
+   gap: 30px;
+   font-size: 40px;
+   margin-left: 10px;
+}
+
+.quicklinksdiv{
+
+}
+
+@media (max-width:768px){
+    .footermain {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        padding: 9px;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.858);
+    }
+    .footerfirstdiv {
+        width: 100%;
+    }
+    .footerseconddiv {
+        width: 100%;
+    }
+    .footerthirddiv {
+        width: 100%;
+    }
+    .footerfourdiv {
+        width: 100%;
+    }
+    .footerseconddiv p{
+        /* color: white; */
+        margin-left: 10px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .footerthirddiv div{
+        color: white;
+        margin-left: 10px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .footerthirddiv p{
+        /* color: white; */
+        margin-left: 10px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .footerfourdiv p{
+        /* color: white; */
+        margin-left: 10px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
